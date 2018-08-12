@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@drawable/mani">
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="110dp"
+        android:layout_weight="0.08"
+        android:hint="Username"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:digits="1234567890"/>
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="221dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:layout_weight="0.08"
+        android:hint="Password"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:inputType="text"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"/>
+
+    <Button
+        android:id="@+id/b_login"
+        android:layout_width="221dp"
+        android:layout_height="25dp"
+        android:layout_gravity="center"
+        android:background="@drawable/cussubmitbutton"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.08"
+        android:text="LOGIN"
+        android:textColor="@color/White"
+        android:textStyle="bold"
+        android:textSize="16dp"/>
+    <TextView
+        android:id="@+id/tv_forgotpass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password?"
+        android:textStyle="bold"
+        android:textSize="15dp"
+        android:textColor="@color/Black"
+        android:layout_gravity="end"
+        android:layout_marginRight="70dp"
+        android:layout_marginTop="5dp"/>
+
+   <!-- <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/Black"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:text="Register"
+        android:typeface="serif"
+        android:layout_marginTop="100dp"/>-->
+
+
+</LinearLayout>

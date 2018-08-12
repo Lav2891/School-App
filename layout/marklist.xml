@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mani">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/SchoolDarkBlue"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/studentprofilepic"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilepic"
+            android:padding="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="Student Name"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="44dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Subjects"
+            android:background="@drawable/marklistubjects"
+            android:textColor="@color/White"
+            android:textAlignment="viewEnd"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="13dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Marks"
+            android:background="@drawable/marklistubjects"
+            android:textColor="@color/White"
+            android:textAlignment="center"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"/>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Grades"
+            android:background="@drawable/marklistubjects"
+            android:textColor="@color/White"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_marks">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/marklistdividerline"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Total"
+            android:textColor="@color/Black"
+            android:textAlignment="viewEnd"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="13dp"/>
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="13dp"
+            android:weightSum="1">
+            <TextView
+                android:id="@+id/tv_obtainedtotal"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textAlignment="center"
+                android:layout_weight="0.5"/>
+            <TextView
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:text="/"
+                android:textColor="@color/Black"
+                android:textAlignment="center"
+                android:layout_weight="0.1"/>
+            <TextView
+                android:id="@+id/tv_grandtotal"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/Black"
+                android:textAlignment="center"
+                android:layout_weight="0.4"/>
+        </LinearLayout>
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="C"
+            android:textColor="@color/Black"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="13dp"
+            android:paddingRight="10dp"/>
+    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

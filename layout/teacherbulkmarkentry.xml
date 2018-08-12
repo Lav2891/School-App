@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:text="class:"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview"
+            android:layout_weight="0.9"
+            android:gravity="end">
+            <Spinner
+                android:id="@+id/s_class"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:text="Section:"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview"
+            android:layout_weight="0.9"
+            android:gravity="end">
+            <Spinner
+                android:id="@+id/s_section"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:text="Subject:"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview"
+            android:layout_weight="0.9"
+            android:gravity="end">
+            <Spinner
+                android:id="@+id/s_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:text="Exam:"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"/>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/customtextview"
+            android:layout_weight="0.9"
+            android:gravity="end">
+            <Spinner
+                android:id="@+id/s_exam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></Spinner>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:weightSum="1">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:text="Maximum Marks:"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.1"/>
+        <EditText
+            android:id="@+id/et_maxmarks"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/SchoolBlue"
+            android:textSize="20dp"
+            android:background="@drawable/customtextview"
+            android:layout_weight="0.9"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/b_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/SchoolBlue"
+        android:text="Submit"
+        android:textColor="@color/White"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"/>
+
+</LinearLayout>

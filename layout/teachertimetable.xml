@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mani">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/customtextview"
+        android:layout_gravity="center"
+        android:layout_margin="15dp">
+        <Spinner
+            android:id="@+id/s_day"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:gravity="center"></Spinner>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/spinnerarrow"
+            android:layout_gravity="end"
+            android:layout_marginTop="3dp"/>
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_timetable">
+
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>

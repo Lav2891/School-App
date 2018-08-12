@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mani"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/SchoolDarkBlue"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/studentprofilepic"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/profilepic"
+            android:padding="20dp" />
+
+        <TextView
+            android:id="@+id/tv_fullname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:text="Student Name"
+            android:layout_marginTop="5dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textSize="20dp"
+            android:layout_marginBottom="10dp"
+            />
+</LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <CalendarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:dateTextAppearance="@style/CalenderViewDateCustomText"
+        android:theme="@style/CalenderViewCustom"
+        android:weekDayTextAppearance="@style/CalenderViewWeekCustomText"
+        android:background="@color/SchoolBlue"></CalendarView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/b_present"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:background="@drawable/attendancebutton"
+        android:layout_margin="10dp"
+        android:text="P"
+        android:textColor="@color/White"
+        android:textStyle="bold"/>
+        <Button
+            android:id="@+id/b_absent"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/studentprofilepic"
+            android:layout_margin="10dp"
+            android:textColor="@color/SchoolDarkBlue"
+            android:text="A"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+            <TextView
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/White"
+                android:textSize="20dp"
+                android:text="No. of days Present"
+                android:background="@color/SchoolBlue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:text=":"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/SchoolBlue"/>
+                <TextView
+                    android:id="@+id/tv_presentdays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:background="@color/SchoolBlue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:text="No. of days Absent"
+                    android:background="@color/SchoolBlue"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:text=":"
+                    android:layout_marginLeft="10dp"
+                    android:background="@color/SchoolBlue"/>
+                <TextView
+                    android:id="@+id/tv_absentdays"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:background="@color/SchoolBlue"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp">
+                <TextView
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:text="Attendance Percentage (%)"
+                    android:background="@color/SchoolBlue"
+                    android:paddingRight="2dp"
+                    android:paddingLeft="2dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:textSize="20dp"
+                    android:text=":"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/SchoolBlue"
+                    android:layout_marginLeft="10dp"/>
+                <TextView
+                    android:id="@+id/tv_attendancepercent"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/White"
+                    android:background="@color/SchoolBlue"
+                    android:textSize="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
